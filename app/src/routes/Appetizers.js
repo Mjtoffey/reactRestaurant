@@ -23,8 +23,8 @@ export default function Menu() {
             className="col-4 text-center text-color-lb pt-4 ps-4 pe-4 pb-4"
           >
             <h2 className="card-title">{item.title}</h2>
-            <h4>Category: {item.category}</h4>
-            <h5>Description: {item.description}</h5>
+            <h4> {item.category}</h4>
+            <h5> {item.description}</h5>
             <h6>{item.price}</h6>
             <br />
           </div>
