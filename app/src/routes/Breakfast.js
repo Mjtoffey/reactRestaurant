@@ -11,17 +11,16 @@ export default function Menu() {
         });
     }, []);
 
-    const breakfastTiems = breakfast.filter((item) => item.category === "Breakfast");
+    const breakfastItems = breakfast.filter((item) => item.category === "Breakfast");
 
     return (
         <>
-            <h1 className="text-center text-color-lb pt-5">Lunch</h1>
-      <div className="row">
-        {/* maps through the data array and puts it into divs */}
-        {lunchItems.map((item) => (
+        <h1 className="text-center text-color-lb pt-4">Breakfast</h1>
+        <div className="row">
+        {breakfastItems.map((item) => (
           <div
             key={item.id}
-            className="col-6 text-center text-color-lb pt-5 ps-5 pe-5"
+            className="col-4 text-center text-color-lb pt-4 ps-4 pe-4 pb-4"
           >
             <h2 className="card-title">{item.title}</h2>
             <h4>Category: {item.category}</h4>
