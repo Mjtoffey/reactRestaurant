@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom"
 function App() {
   return (
     <>
+      <Header />
       <Navbar />
       <div className="container">
         <Routes>
