@@ -22,11 +22,13 @@ export default function Menu() {
             key={item.id}
             className="col-1 text-center text-color-lb pt-4 ps-4 pe-4 pb-4"
           >
-            <h2 className="card-title">{item.title}</h2>
-            <h4> {item.category}</h4>
-            <h5> {item.description}</h5>
-            <h6>{item.price}</h6>
-            <br />
+            <div className="card-body">
+              <h2 className="card-title">{item.title}</h2>
+              <h4> {item.category}</h4>
+              <h5> {item.description}</h5>
+              <h6>{item.price}</h6>
+              <br />
+            </div>
           </div>
         ))}
       </div>
